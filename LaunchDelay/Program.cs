@@ -27,12 +27,6 @@ namespace LaunchDelay
         {
             if (Application != "")
             {
-                Console.WriteLine("Launching: [{0}] after {1} seconds", Application, DelayTime);
-                if (ProcessTrigger != "")
-                {
-                    Console.WriteLine("Launching: [{0}] after [{1}] process starts", Application, ProcessTrigger);
-                }
-
                 DelayForSeconds(DelayTime);
                 if (DelayForProcess(ProcessTrigger, ProcessTimeOut))
                 {
